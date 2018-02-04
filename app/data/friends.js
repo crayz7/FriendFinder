@@ -13,7 +13,7 @@ var friends = [
     name:"Rebecca",
     photo:"https://creativecommons.org/wp-content/uploads/2016/05/rebecca_avatar_1464721087-300x300.jpg",
     scores:[2, 5, 3, 1, 2]
-  }
+  },
   {
     name:"Michael",
     photo:"https://upload.wikimedia.org/wikipedia/commons/8/88/Michael_Jordan.jpg",
