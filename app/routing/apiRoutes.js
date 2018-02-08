@@ -9,26 +9,9 @@ module.exports = function(app) {
   });
 
   app.post("/api/friends", function(req, res) {
-  // req.body hosts is equal to the JSON post sent from the user
-  // This works because of our body-parser middleware
-  // var inputData = req.body;
-  // var inputScores = inputData.scores;
-  // var totalDifference = 0;
-  // //var scoresArray = [];
-  // // Loop through each friend's scores  
-  // for (var i = 0; i < inputScores.length; i++) {
-  //  	if(inputScores[i] == "1 (Strongly Disagree)") {
-		// 		inputScores[i] = 1;
-		// 	} else if(inputScores[i] == "5 (Strongly Agree)") {
-		// 		inputScores[i] = 5;
-		// 	} else {
-		// 		inputScores[i] = parseInt(inputScores[i]);
-		// 	}
-		// 	console.log(inputScores);
-   // Add new friend entry
-
-	// Capture the user input object
+  	// Capture the user input object
 	var newFriendScores = req.body.scores;
+	var newFriendScores = [];
     var scoresArray = [];
     var friendCount = 0;
     var bestMatch = 0;
@@ -58,7 +41,5 @@ module.exports = function(app) {
 
     //pushes new submission into the friendsList array
     friends.push(req.body);
-
-  //friends.push(inputScores/res.json(friends);
   });
 }
