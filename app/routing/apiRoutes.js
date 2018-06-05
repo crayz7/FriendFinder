@@ -10,7 +10,7 @@ module.exports = function(app) {
 
   app.post("/api/friends", function(req, res) {
   	// Capture the user input object
-	var newFriendScores = req.body['scores[]'];
+	var newFriendScores = req.body;
 	//var newFriendScores = [];
     var scoresArray = [];
     var friendCount = 0;
